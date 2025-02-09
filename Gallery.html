@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Helvetica, sans-serif';
+      margin: 0;
+      padding: 0;
+      background-color: #fff8dc;
+      color: Maroon;
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #8B0000;
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      background-image: url('pic 18.jpg'); /* Replace with the correct image file path */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    header:hover {
+      transform: scale(1.1); /* Zoom effect on hover */
+      transition: transform 0.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    header p {
+      font-size: 1.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Gallery Section */
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+      gap: 15px;
+      padding: 20px;
+      justify-items: center;
+    }
+
+    .gallery-container img, .gallery-container video {
+      width: 250px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    /* Hover Effect */
+    .gallery-container img:hover, .gallery-container video:hover {
+      transform: scale(1.05);
+    }
+
+    /* Image Popup (Modal) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Close Button */
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="about-him.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="Achievements.html">Achievements</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="Gallery">
+    <h1 style="color:white; font-size:50px;">Gallery</h1>
+    <p style="color:white; font-size:25px;">“My best friend is the one who brings out the best in me.”</p>
+  </header>
+<br>
+<br>
+<center>  
+<!-- Gallery Section -->
+  <section class="gallery-container">
+    <!-- Images -->
+    <img src="hand.jpg" alt="Memory 1" onclick="openModal(this)">
+    <img src="mas.jpg" alt="Memory 2" onclick="openModal(this)">
+     <img src="uu.jpg" alt="Memory 5" onclick="openModal(this)">
+    <img src="pic 12.jpg" alt="Memory 6" onclick="openModal(this)">
+    <img src="pic 24.jpg" alt="Memory 7" onclick="openModal(this)">
+    <img src="gud.jpg" alt="Memory 8" onclick="openModal(this)">
+    <img src="pic 25.jpg" alt="Memory 9" onclick="openModal(this)">
+    <img src="skt5.jpg" alt="Memory 10" onclick="openModal(this)">
+    <img src="mask.jpg" alt="Memory 12" onclick="openModal(this)">  
+    <img src="ebin.jpg" alt="Memory 15" onclick="openModal(this)">
+    <img src="dd3.jpg" alt="Memory 14" onclick="openModal(this)">
+    <img src="devoured swine.jpg" alt="Memory 13" onclick="openModal(this)">
+    <img src="fam.jpg" alt="Memory 16" onclick="openModal(this)">
+    <img src="guitar.jpg" alt="Memory 18" onclick="openModal(this)">
+    <img src="pic 1.jpg" alt="Memory 31" onclick="openModal(this)">
+    <img src="mdm.jpg" alt="Memory 20" onclick="openModal(this)">
+    <img src="pic 17.jpg" alt="Memory 21"onclick="openModal(this)">
+   <img src="skt1.jpg" alt="Memory 22"onclick="openModal(this)">
+    <img src="skt3.jpg" alt="Memory 23"onclick="openModal(this)">
+    <img src="skt8.jpg" alt="Memory 24"onclick="openModal(this)">
+     <img src="skt7.jpg" alt="Memory 25"onclick="openModal(this)">
+     <img src="smol.jpg" alt="Memory 26"onclick="openModal(this)">
+     <img src="wee.jpg" alt="Memory 27"onclick="openModal(this)">
+     <img src="prom.jpg" alt="Memory 28"onclick="openModal(this)">
+     <img src="pic 6.jpg" alt="Memory 35"onclick="openModal(this)">
+     <img src="pic 10.jpg" alt="Memory 34"onclick="openModal(this)">
+     <img src="pic 20.jpg"alt="Memory 33"onclick="openModal(this)">
+     <img src="spec.jpg" alt="Memory 29"onclick="openModal(this)">
+     <img src="flash.jpg" alt="Memory 17"onclick="openModal(this)">
+    <img src="smoll.jpg" alt="Memory 11"onclick="openModal(this)">
+    <img src="skate.jpg" alt="Memory 36"onclick="openModal(this)">
+     <img src="selfie.jpg" alt="Memory 30"onclick="openModal(this)">
+     <img src="black.jpg" alt="Memory 32"onclick="openModal(this)">
+     <img src="dd1.jpg" alt="Memory 32"onclick="openModal(this)">
+    <img src="mark.jpg" alt="Memory 31"onclick="openModal(this)">
+    <img src="Studio.jpg" alt="Memory 32"onclick="openModal(this)">
+    </section>
+  </center>
+
+  <!-- Modal for Zooming -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <!-- JavaScript for Image Zoom -->
+  <script>
+    function openModal(img) {
+      var modal = document.getElementById("imageModal");
+      var modalImg = document.getElementById("modalImage");
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+      
+<br>
+
+    <!-- Videos -->
+    <center><video controls>
+      <source src="Video 5.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video></center>
+     <center><video controls>
+      <source src="Video 3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video></center>
+
+     </section>
+</center>
+  <!-- Footer -->
+  <footer>
+    <p>&copy;Friend at first sight's 2024. Disclaimer:"This website is developed to fulfil the requirements of IMD318, Individual Assignments." Privacy Policy | Terms and Co.</p>
+  </footer>
+
+</body>
+</html>

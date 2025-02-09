@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Helvetica, sans-serif';
+      margin: 0;
+      padding: 0;
+      background-color: #fff8dc;
+      color: Maroon;
+      line-height: 1.6;
+    }
+
+    /* Header with Background Image */
+    header {
+      text-align: center;
+      background-image: url('pic 21.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    header:hover {
+      transform: scale(1.1);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    header h1, header p {
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #8B0000;
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* About Section */
+    #about-him {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #about-him img {
+      max-width: 350px;
+      border-radius: 50%;
+      margin-top: 10px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    #about-him img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Fun Facts Section */
+    #fun-facts {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #fun-facts button {
+      padding: 10px 20px;
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    #fun-facts button:hover {
+      background-color: #ff4500;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    .gallery img:active {
+      transform: scale(1.5);
+    }
+
+    /* Countdown Section */
+    #countdown {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+
+    /* Family Section Styling */
+.about-him-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.about-him-container img {
+  width: 550px;  /* Ensures all images are the same width */
+  height: 100% auto; /* Ensures all images are the same height */
+  object-fit: cover; /* Ensures the images cover the space proportionally */
+  border-radius: 15px; /* Optional: Adds rounded corners */
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.about-him-container img:hover {
+  transform: scale(1.1); /* Zoom-in effect on hover */
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="about-him.html">About</a></li>
+      <li><a href="Education.html">Education</a></li>
+      <li><a href="Achievements.html">Achievements</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <header id="About">
+    <h1 style="color:white; font-size:50px;">About Him</h1>
+    <p style="color:white; font-size:25px;">“The only way to have a friend is to be one.”</p>
+  </header>
+
+  <br>
+
+  <!-- About Section -->
+  <section id="about-him">
+    <br>
+    <img src="pic 23.jpg" alt="Photo of Vansus">
+  </section>
+
+  <!-- Fun Facts Section -->
+  <section id="fun-facts">
+    <h2 style="color:maroon; font-size:30px;">Name: Vansus Vayne Anak Arzona</h2>
+    <p style="color:#8B4513; font-size:30px;">Age: 20 years old.</p>
+    <p style="color:#8B4513; font-size:30px;">Nickname: Yoyon</p>
+    <p style="color:#8B4513; font-size:30px;">Fav Color: Blue.</p>
+    <p style="color:#8B4513; font-size:30px;">Place of Birth: Sarawak General Hospital.</p>
+    <p style="color:#8B4513; font-size:30px;">Date of birth: 17 August 2024</p>
+    <p style="color:#8B4513; font-size:30px;">Language: Bidayuh, Chinese, Iban, English, Bahasa Melayu</p>
+    <p style="color:#8B4513; font-size:30px;">Height: 165cm</p>
+    <p style="color:#8B4513; font-size:30px;">Weight: 65kg</p>
+    <p style="color:#8B4513; font-size:30px;">Eye color: brown</p>
+    <p style="color:#8B4513; font-size:30px;">Hair color: black</p>
+    <p style="color:#8B4513; font-size:30px;">Address: No 12 Lot 1085 Taman Tropimas, Jalan Field Force Camp, 93250, Kuching, Sarawak</p>
+    <p style="color:#8B4513; font-size:30px;">Hobbies: Skateboarding, Playing Guitar, Playing Drum and composing music</p>
+    <p style="color:#8B4513; font-size:30px;">Religion: Roman Catholic</p>
+    <p style="color:#8B4513; font-size:30px;">
+  Email: <a href="mailto:vaenzz04@gmail.com" style="color:purple; text-decoration:underline;">vaenzz04@gmail.com</a>
+</p>
+<p style="color:#8B4513; font-size:30px;">Can follow Vansus on Instagram and Facebook by clicking on the icon below</p>
+    
+    <center>
+      <a href="https://www.instagram.com/v4nsus_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+        <img src="IG.jpeg" alt="Ig Logo" style="width: 80px; height: auto;">
+      </a>
+    </center>
+    <br>
+    <center>
+      <a href="https://www.facebook.com/vansus.vayne.5?mibextid=ZbWKwL" target="_blank">
+        <img src="FB.jpeg" alt="Fb Logo" style="width: 80px; height: auto;">
+      </a>
+    </center>
+    <br>
+
+    <button id="reveal-fact">Click Me</button>
+    <p id="fun-fact" style="display: none;">I Love to Skate & Try new tricks!</p>
+  </section>
+
+<br>
+
+<center><iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.03412726143!2d110.351735!3d1.552303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2sYour+Location+Name!5e0!3m2!1sen!2sus!4v1234567890123"
+  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+</iframe></center>
+
+<br>
+ 
+<center><h2 style="color:maroon; font-size:30px;">Family</h2></center>
+<div class="about-him-container">
+    <center><img src="papa nana.jpg" alt="Vansus's Father"></center>
+  </div>
+<center><p style="color:maroon; font-size:30px;">Father name: Arzona Edward </p></center>
+<center><p style="color:maroon; font-size:30px;">Age: 41 years old </p></center>
+<center><p style="color:maroon; font-size:30px;">Date of birth: 21st September 1984 </p></center>
+<br>
+
+<div class="about-him-container">
+    <center><img src="mami oya.jpg" alt="Vansus's Mother"></center>
+  </div>
+<center><p style="color:maroon; font-size:30px;">Mother name: Flora Sim </p></center>
+<center><p style="color:maroon; font-size:30px;">Age: 40 years old </p></center>
+<center><p style="color:maroon; font-size:30px;">Date of birth: 24th January 1985 </p></center>
+<br>
+
+<div class="about-him-container">
+    <center><img src="popo.jpg" alt="Vansus's little sister"></center>
+  </div>
+<center><p style="color:maroon; font-size:30px;">Little sister name: Elysha Anak Arzona </p></center>
+<center><p style="color:maroon; font-size:30px;">Age: 11 years old </p></center>
+<center><p style="color:maroon; font-size:30px;">Date of birth: 3rd January 2014 </p></center>
+<br>
+
+<div class="about-him-container">
+    <center><img src="coco.jpg" alt="Vansus's little brother"></center>
+  </div>
+<center><p style="color:maroon; font-size:30px;">1st Little brother name: Peter Anak Arzona </p></center>
+<center><p style="color:maroon; font-size:30px;">Age: 5 years old </p></center>
+<center><p style="color:maroon; font-size:30px;">Date of birth: 23rd March 2020 </p></center>
+<br>
+
+<div class="about-him-container">
+    <center><img src="ocin.jpg" alt="Vansus's little brother"></center>
+  </div>
+<center><p style="color:maroon; font-size:30px;">2nd Little brother name: Andrew Anak Arzona </p></center>
+<center><p style="color:maroon; font-size:30px;">Age: 4 years old </p></center>
+<center><p style="color:maroon; font-size:30px;">Date of birth: 21st December 2021</p></center>
+<br>
+ 
+
+  <footer>
+    <p style="color:white; font-size:15px;">&copy; Friend at first sight's 2024. Disclaimer: "This website is developed to fulfil the requirements of IMD318, Individual Assignments." Privacy Policy | Terms and Co.</p>
+  </footer>
+
+  <script>
+    document.getElementById("reveal-fact").addEventListener("click", function() {
+      var fact = document.getElementById("fun-fact");
+      fact.style.display = (fact.style.display === "none") ? "block" : "none";
+    });
+  </script>
+
+</body>
+</html>
+
+

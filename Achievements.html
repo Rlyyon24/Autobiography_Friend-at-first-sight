@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+    /* General Styles */
+    body {
+            font-family: 'Helvetica, sans-serif';
+      margin: 0;
+      padding: 0;
+      background-color: #fff8dc;
+      color: Maroon;
+      line-height: 1.6;
+    }
+
+    /* Header with Background Image */
+    header {
+      text-align: center;
+      background-image: url('achieve.jpg'); /* Replace with the correct image file path */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    header:hover {
+      transform: scale(1.1); /* Zoom effect on hover */
+      transition: transform 0.5s ease-in-out;
+    }
+
+    header h1, header p {
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #8B0000;
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* About Section */
+    #about-him {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #about-him img {
+      max-width: 350px;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+
+    /* Fun Facts Section */
+    #fun-facts {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #fun-facts button {
+      padding: 10px 20px;
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #fun-facts button:hover {
+      background-color: #ff4500;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    .gallery img:active {
+      transform: scale(1.5);
+    }
+
+    /* Countdown Section */
+    #countdown {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+
+     /* Achievements Section Styling */
+  .achievements-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between images */
+    padding: 20px;
+  }
+
+  .achievements-container img {
+    width: 50%; /* Adjust image width */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+  }
+
+  .achievements-container img:hover {
+    transform: scale(1.1); /* Zoom-in effect */
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="about-him.html">About</a></li>
+      <li><a href="Education.html">Education</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="Achievements.html">Achievements</a></li>
+    </ul>
+</ul>
+  </nav>
+
+
+
+<header id="Achievements">
+    <h1 style="color:white; font-size:50px;">Achievements</h1>
+    <p style="color:white; font-size:25px;">“The only goals you don’t achieve in life are the goals you don’t set”</p>
+  </header>
+
+ 
+<br>
+
+<!-- Achievements Section -->
+<section id="achievements">
+  <center><h2 style="color:maroon; font-size:30px;">Awards and Certificates</h2></center>
+  <div class="achievements-container">
+    <img src="skatepark stadium.jpg" alt="Memory Skate">
+    <img src="SSM.jpg" alt="Memory Program Usahawan Muda">
+    <img src="Kamikaze.jpg" alt="Memory ML Competition">
+  </div>
+
+  <center><h2 style="color:maroon; font-size:30px;">List of Experiences</h2></center>
+  <div class="achievements-container">
+    <img src="driex.jpg" alt="Memory Build a Project">
+  </div>
+
+  <p style="color:#8B4513; font-size:20px;">1. Went to Kuala Lumpur as Sarawak representative for skateboarding competition in 2021</p>
+  <p style="color:#8B4513; font-size:20px;">2. Performed with a local deathcore band live on stage at a gig in 2025</p>
+  <p style="color:#8B4513; font-size:20px;">3. Showcased a project called Fan with dual motor recyclable energy at Politeknik Kuching Sarawak for innovation week 2024</p>
+  <p style="color:#8B4513; font-size:20px;">4. Showcased a homemade working wooden guitar for RBT at SK St Joseph Kuching in 2018</p>
+  <p style="color:#8B4513; font-size:20px;">5. Placed 2nd in a Mobile Legend Tournament at SMK St Thomas Kuching in 2022</p>
+  <p style="color:#8B4513; font-size:20px;">6. Competed in a local skateboarding competition at Stadium Negeri Sarawak in 2024</p>
+  <p style="color:#8B4513; font-size:20px;">7. Formed a band, released a cover, and reached 1k viewers on Facebook and Instagram in 2025</p>
+  <p style="color:#8B4513; font-size:20px;">8. Played guitar for every mass in St Joseph Cathedral since 2019</p>
+  <p style="color:#8B4513; font-size:20px;">9. Became a school representative for rugby, trained by a Malaysia representative rugby player</p>
+</section>
+ <footer>
+    <p style="color:white; font-size:15px;">&copy;Friend at first sight's 2024. Disclaimer:"This website is developed to fulfil the requirements of IMD318, Individual Assignments." Privacy Policy | Terms and Co.</p>
+  </footer>
+
+</body>
+</html>

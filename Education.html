@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+    /* General Styles */
+    body {
+            font-family: 'Helvetica, sans-serif';
+      margin: 0;
+      padding: 0;
+      background-color: #fff8dc;
+      color: Maroon;
+      line-height: 1.6;
+    }
+
+    /* Header with Background Image */
+    header {
+      text-align: center;
+      background-image: url('team.jpg'); /* Replace with the correct image file path */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    header:hover {
+      transform: scale(1.1); /* Zoom effect on hover */
+      transition: transform 0.5s ease-in-out;
+    }
+
+    header h1, header p {
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #8B0000;
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* About Section */
+    #about-him {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #about-him img {
+      max-width: 350px;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+
+    /* Fun Facts Section */
+    #fun-facts {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #fun-facts button {
+      padding: 10px 20px;
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #fun-facts button:hover {
+      background-color: #ff4500;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    .gallery img:active {
+      transform: scale(1.5);
+    }
+
+    /* Countdown Section */
+    #countdown {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+
+  /* Education Section Styling */
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between images */
+    padding: 20px;
+  }
+
+  .education-container img {
+    width: 50%; /* Adjust image width */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+  }
+
+  .education-container img:hover {
+    transform: scale(1.1); /* Zoom-in effect */
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="about-him.html">About</a></li>
+      <li><a href="Education.html">Education</a></li>
+      <li><a href="Achievements.html">Achievements</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+    </ul>
+</ul>
+  </nav>
+
+
+
+<header id="Education">
+    <h1 style="color:white; font-size:50px;">Education</h1>
+    <p style="color:white; font-size:25px;">“Friends are the siblings God never gave us.”</p>
+  </header>
+
+ 
+<br>
+
+<!-- Education Section -->
+<section id="education">
+  <center><h2 style="color:maroon; font-size:30px;">2009, Tadika Rajawali Class 1C.</h2></center>
+  <div class="education-container">
+    <img src="Tadika.jpg" alt="Tadika Rajawali">
+  </div>
+
+  <center><h2 style="color:maroon; font-size:30px;">2011-2016, Sk St Joseph & 2017-2022, SMK St Joseph</h2></center>
+  <div class="education-container">
+    <img src="sch.jpg" alt="SK St Joseph">
+    <img src="st jo.jpg" alt="SMK St Joseph">
+    <img src="class 5D 2021.jpg" alt="Class 5D 2021">
+  </div>
+
+  <center>
+    <p style="color:maroon; font-size:30px;">
+      Previously was the Sk St Joseph and SMK St Joseph's Kuching, Sarawak Alumni.
+    </p>
+    <a href="https://www.facebook.com/photo/?fbid=476171301275345&set=a.415486294010513" target="_blank">
+      <img src="stjo.jpeg" alt="STJO Logo" style="width: 100px; height: auto;">
+    </a>
+  </center>
+
+  <center><h2 style="color:maroon; font-size:30px;">2022, Politeknik Kuching, Sarawak</h2></center>
+  <div class="education-container">
+    <img src="poli2.jpg" alt="Politeknik Kuching">
+    <img src="sem1.jpg" alt="Semester 1">
+    <img src="poli.jpg" alt="Politeknik Campus">
+  </div>
+
+  <center>
+    <p style="color:maroon; font-size:30px;">
+      Currently continuing his diploma in electrical electronic course at Politeknik Kuching, Sarawak.
+    </p>
+    <a href="https://www.instagram.com/polikuchingsrwk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+      <img src="pks.png" alt="PKS Logo" style="width: 150px; height: auto;">
+    </a>
+  </center>
+</section>
+<br>
+ <footer>
+    <p style="color:white; font-size:15px;">&copy;Friend at first sight's 2024. Disclaimer:"This website is developed to fulfil the requirements of IMD318, Individual Assignments." Privacy Policy | Terms and Co.</p>
+  </footer>
+
+</body>
+</html>
